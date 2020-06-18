@@ -1,2 +1,2 @@
 # Rocketseat Skylab
-  Introdução javaScript Exercicios Modulo01 
+  StarterCursos/CursoJS/IntroduçãoJS/ExerciciosModulo01 
