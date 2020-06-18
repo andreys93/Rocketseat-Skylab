@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ºexercício</title>
+</head>
+<body>
+
+<ul id="ul">
+</ul>    
+
+<script>
+
+var nomes = ["Diego", "Gabriel", "Lucas"];
+
+var listaElement = document.querySelector('#ul')
+
+//criando linha 1 da lista 
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l1',);
+
+var textElement = document.createTextNode(nomes[0])
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+//criando linha 2 da lista
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l2',);
+
+var textElement = document.createTextNode(nomes[1])
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+//criando linha 3 da lista
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l3',);
+
+var textElement = document.createTextNode(nomes[2])
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+</script>
+</body>
+</html>

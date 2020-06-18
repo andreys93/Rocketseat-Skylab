@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4ºexercício</title>
+</head>
+<body>
+  
+<div>
+<input type="text" name="nome" id="escrever" >
+<button id="botao">Adicionar</button>
+</div>
+
+<div>
+<ul id="ul">
+</ul>  
+</div>  
+
+<script>
+
+var nomes = ["Diego", "Gabriel", "Lucas"];
+
+var listaElement = document.querySelector('#ul')
+
+//criando linha 1 da lista 
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l1',);
+
+var textElement = document.createTextNode(nomes[0])
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+//criando linha 2 da lista
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l2',);
+
+var textElement = document.createTextNode(nomes[1])
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+//criando linha 3 da lista
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l3',);
+
+var textElement = document.createTextNode(nomes[2])
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+var adicionar = document.querySelector('#botao')
+var valorIpunt = document.querySelector('#escrever')
+
+valorIpunt.onkeypress = function (){}
+
+adicionar.onclick =  function (){
+
+linhaElement = document.createElement('li')
+linhaElement.setAttribute('id', 'l3',);
+
+var textElement = document.createTextNode(valorIpunt.value)
+linhaElement.appendChild(textElement);
+
+var containerElement = listaElement
+containerElement.appendChild(linhaElement)
+
+valorIpunt.value = ''
+
+}
+
+</script>
+</body>
+</html>

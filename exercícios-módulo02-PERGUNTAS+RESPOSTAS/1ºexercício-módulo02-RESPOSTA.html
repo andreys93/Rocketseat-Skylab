@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1ºexercício</title>
+</head>
+<body>
+ <div >
+ <button id="botao">click</button> 
+ </div>   
+
+<script>
+
+    var btnElement = document.querySelector('#botao')
+
+    btnElement.onclick = function () {
+
+    divNova = document.createElement('div')
+    divNova.setAttribute('class', 'box',);
+
+    divNova.style.backgroundColor = 'red';
+    divNova.style.width = '100px';
+    divNova.style.height = '100px';
+
+    var containerElement = document.querySelector('body')
+    containerElement.appendChild(divNova)
+
+}
+
+</script>
+</body>
+</html>
