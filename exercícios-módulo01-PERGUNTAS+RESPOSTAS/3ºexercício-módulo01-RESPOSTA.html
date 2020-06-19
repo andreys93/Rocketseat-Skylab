@@ -11,27 +11,25 @@
 
 function temHabilidade(skills) {
  
-var skills = ["Javascript", "ReactJS", "React Native"];
+var skills = ['Javascript', 'ReactJS', 'React Native'];
 
-skills.indexOf(0)
+ if (skills[0] === "Javascript" ){
 
- if (skills[0] == "Javascript" ){
-
- console.log(true)
+    return 'true';
+ 
 
  } else {
 
- console.log(false)
+    return 'false';
 
  }
 
 }
-var skills = ["Javascript", "ReactJS", "React Native"];
-temHabilidade(skills); 
 
+var skills = temHabilidade ('Javascript', 'ReactJS', 'React Native');
+console.log(skills);
 
 </script>
-
-    
+ 
 </body>
 </html>
